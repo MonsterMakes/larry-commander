@@ -1,16 +1,16 @@
 'use strict';
 const chai = require('chai');
-const should = chai.should();
+const should = chai.should(); // eslint-disable-line
 //const expect = chai.expect;
 
-const Command = require("../src/Command");
+const Command = require('../src/Command');
 
 class Parent{
 	method(){
 		return {
-			property: "value",
+			property: 'value',
 			args: [...arguments]
-		}
+		};
 	}
 	method2(toBeEchoed){
 		return toBeEchoed;
@@ -29,7 +29,7 @@ describe(TEST_NAME, () => {
 		return cmdMethod.execute()
 			.then((result)=>{
 				result.should.eql({
-					property: "value",
+					property: 'value',
 					args: [1,2,3]
 				});
 			});
@@ -44,9 +44,9 @@ describe(TEST_NAME, () => {
 		return cmdMethod.execute()
 			.then((result)=>{
 				result.should.eql({
-					property: "value",
+					property: 'value',
 					args: [1,2,3]
-				})
+				});
 			});
 	});
 });

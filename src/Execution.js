@@ -1,5 +1,5 @@
 'use strict';
-const _ = require("lodash");
+const _ = require('lodash');
 const Command = require('./command');
 
 class Execution{

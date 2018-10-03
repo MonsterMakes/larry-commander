@@ -1,5 +1,5 @@
 'use strict';
-const Execution = require("./Execution");
+const Execution = require('./Execution');
 
 class TheExecutioner{
 	constructor(){

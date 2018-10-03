@@ -1,11 +1,12 @@
 {
   "name": "larry-executioner",
   "description": "A library to automate the execution of javascript calls.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bin": {},
   "repository": {},
   "license": "MIT",
   "scripts": {
+	"lint-fix": "echo '=> Fixing Linting errors...' && eslint {src,cypress,test}/**/*.js --fix",
     "lint": "echo '=> Linting' && eslint **/*.js",
     "test": "echo '=> Running Tests' && mocha -u tdd --timeout 60000 --colors test/**/*.spec.js",
     "test-coverage": "echo '=> Running Tests w/ Coverage' && nyc mocha test/**/*.spec.js",
