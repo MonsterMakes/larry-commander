@@ -1,5 +1,5 @@
 {
-  "name": "larry-executioner",
+  "name": "@monstermakes/larry-executioner",
   "description": "A library to automate the execution of javascript calls.",
   "version": "0.0.2",
   "bin": {},
